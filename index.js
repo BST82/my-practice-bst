@@ -1,7 +1,8 @@
 // making backend server
 
 const http = require("http");
-const port =2000;
+// const port =2000;
+const port=process.env.port;
 const hostname="localhost";
 /// for home page start ..................................................
 const fs=require("fs")
