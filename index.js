@@ -2,7 +2,7 @@
 
 const http = require("http");
 // const port =2000;
-const port=process.env.port  || 8000 ;
+const port=process.env.port;
 // const hostname="localhost"; for local server khud ke computer k liye 
 /// for home page start ..................................................
 const fs=require("fs")
@@ -31,5 +31,5 @@ const server = http.createServer((request,response,next)=>{
 //     console.log(`server is working on http://${hostname}:${port})`);
 // });
 server.listen(port,()=>{
-       console.log(`server is working ${port} `);
+       console.log(`server is working`);
    });
