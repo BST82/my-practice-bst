@@ -3,7 +3,7 @@
 const http = require("http");
 // const port =2000;
 const port=process.env.port;
-const hostname="localhost";
+// const hostname="localhost"; for local server khud ke computer k liye 
 /// for home page start ..................................................
 const fs=require("fs")
 const home = fs.readFileSync("./index.html","utf-8");
@@ -27,6 +27,9 @@ const server = http.createServer((request,response,next)=>{
     }
 
 });
-server.listen(port,hostname,()=>{
-    console.log(`server is working on http://${hostname}:${port})`);
-});
+// server.listen(port,hostname,()=>{
+//     console.log(`server is working on http://${hostname}:${port})`);
+// });
+server.listen(port,()=>{
+       console.log(`server is working `);
+   });
