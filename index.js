@@ -6,7 +6,7 @@ const http = require("http");
 // const hostname="localhost"; for local server khud ke computer k liye 
 /// for home page start ..................................................
 const fs=require("fs")
-const port=process.env.port;
+const port=process.env.port || 8000 ;
 const home = fs.readFileSync("./index.html","utf-8");
 const server = http.createServer((request,response,next)=>{
 
